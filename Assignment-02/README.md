@@ -5,14 +5,15 @@ Initialize and assign a value to an integer, float, and char variable. Then prin
 ```terminal_session
 5 is an integer and size int is 4!
 3.140000 is a float and size 4!
-Hello, World! is a char and size is 14!
+Hello, World! is a String and size is 14!
+Sizeof 'Hello, World!' is: 14, but the lenght of char is: 13!
 ```
 
 ## More Details
 
 > sizeof(char array) is "count of chars" + `\0`
 
-- \0 is "Null terminator" to shows the end of the string. `\0` the c automatically add \0 to end of string, if \0 doesn't exist in a string printf("%s") will searching to find \0, so it may print unwanted text or crash.
+- `\0` (Null Terminator) indicates the end of a string in C. The compiler automatically adds \0 to the end of a string. If \0 is missing, printf("%s") will keep searching for \0 in memory, which may result in printing unwanted text or causing a crash.
 
-- if you want count of chars you can use `strlen(string)`
+- If you want to count the number of characters in a string, you can use `strlen(string)`.
 
