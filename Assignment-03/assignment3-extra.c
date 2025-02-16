@@ -1,21 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-int main(void)
-{
-  //initialize vars
-  char *first;
-  char *last;
+int main(){
+	
+	char yourname[40];
+	
+	printf("Add your name:");
 
-  //prompt user to input first and last name and use scanf() to store those to the initiliazed vars
-  printf("Enter your first name: ");
-  scanf("%ms", &first);
-  printf("Enter your last name: ");
-  scanf("%ms", &last);
-
-  //print the welcome message!
-  printf("Hello %s %s!\n", first, last);
-
-  free(first);
-  free(last);
+	scanf("%39s",yourname);
+	
+	// Allocate Memory as we need
+	char *name = malloc(strlen(yourname)+1); // 1 is for \0 terminator
+	
+	if(name==NULL) return 1;
+	
+	// Copy to memory
+	strcpy(name, yourname);
+	
+	printf("Name is %s", name);
+	
+	free(name);
+	
+	return 0;
 }
