@@ -14,7 +14,7 @@ Hello Jimmy Smith!
 ```
 
 
-More Information:
+## More Details:
 
 - We can't enter our input with "spaces" using the scanf function, because it terminates the text when it encounters a space. So, we use the fgets function instead.
 - if we don't use "&" (address of variable) in scanf, it will place the output randomly in a memory, which can cause a crash in our program.
@@ -22,12 +22,12 @@ More Information:
 - We don't need to use `&` before arrays (str[]) because an array acts as a pointer.
 - When we use `malloc`, we have to free the memory with `free`.
 - `Pass by reference`:
-	. When we have an array or string
-	. When we work with malloc and free
-	. System/dirver promgraming.
-	. Managin large data
+	- When we have an array or string
+	- When we work with malloc and free
+	- System/dirver promgraming.
+	- Managin large data
 
 - `Pass by value`:
-	. When we don't need to change the original value.
-	. For simple mathematical operations.
+	- When we don't need to change the original value.
+	- For simple mathematical operations.
 
