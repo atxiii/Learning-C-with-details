@@ -9,3 +9,13 @@ tokyo:~/LearningC/ # ./assignment4
 Enter the radius of your circle: 12.34
 The area of your circle is 478.145386
 ```
+
+
+## More Details
+
+- We use `double` for more precise values compared to `float`.
+- We use `%lf` for double and `%f` for float in printf.
+- `#define` sets a value before compilation (preprocessor directive).
+- `const` sets a value at runtime but is still a compile-time constant in most cases.
+- `const` has a specific type, whereas #define is just a text replacement.
+- #define does not allocate memory, but const does.

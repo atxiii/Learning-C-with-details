@@ -1,21 +1,20 @@
 #include <stdio.h>
-//define a value for PIE
-#define PIE 3.14
-
-int main(void)
-{
-  //initialize variable
-  float radius;
-
-  //get user input and store it
-  printf("Enter the radius of your circle: ");
-  scanf("%f", &radius);
-
-  //do the maths
-  float area;
-  area = PIE * (radius * radius);
-
-  printf("The area of your circle is %f", area);
 
 
+// #define PI 3.14159
+const double PI  = 3.141592653589793;
+
+
+int main(){
+	
+	double radius; 
+	double a;
+	
+	printf("Add a number to calc radius area:");
+	scanf("%lf",&radius);
+	
+	a = PI * radius * radius;
+	
+	printf("%lf",a);
+	return 0;
 }
